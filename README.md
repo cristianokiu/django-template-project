@@ -1,4 +1,7 @@
-django-template-project
-=======================
+Django Template Project
+==============
 
-Um template de projeto django
+## Usage
+
+    django-admin startproject --template=https://github.com/gileno/django-template-project/archive/master.zip your_project_name
+
