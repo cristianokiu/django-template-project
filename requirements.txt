@@ -1,2 +1,5 @@
 Django>=1.7
 gunicorn
+flake8
+nose
+coverage
