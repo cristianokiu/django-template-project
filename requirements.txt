@@ -3,3 +3,4 @@ gunicorn
 flake8
 nose
 coverage
+model-mommy
