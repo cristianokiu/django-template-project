@@ -1,5 +1,5 @@
 pep8:
-	@flake8 * --ignore=F403,F401 --exclude=requirements.txt,*.pyc,*.md,Makefile,LICENSE,*.in
+	@flake8 * --ignore=F403,F401 --exclude=requirements.txt,*.pyc,*.md,Makefile,LICENSE,*.in,*.conf,gunicorn_start
 
 clean:
 	@find . -name "*.pyc" -delete
@@ -21,3 +21,4 @@ help:
 
 setup: settings deps clean
 	@python manage.py syncdb
+	@python manage.py migrate

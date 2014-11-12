@@ -97,6 +97,6 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 )
 
 try:
-    from local_settings import *
+    from {{ project_name }}.local_settings import *
 except ImportError:
     pass
